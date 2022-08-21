@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  width: 100%;
+  text-align: start;
+}
+.container {
+  width: 70vh;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 15% 15% 55%;
+  row-gap: 10px;
+}
+form input {
+  grid-column: 2 / 4;
+  padding: 8px;
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+form input.submitBtn {
+  grid-column: 2/ 3;
+  background-color: hwb(152 13% 33%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
